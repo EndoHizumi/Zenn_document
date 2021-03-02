@@ -38,8 +38,10 @@ Androidの端末エミュレーターアプリである「Termux」で、Code-Se
 
 ## Termuxとは
 
-AndroidでLinuxのコマンドを使うことがアプリです。
+AndroidでLinuxのコマンドを使える端末エミュレータです。
+[公式サイト](https://termux.com/)
 Root化の必要がなく、ls,cd,catといった一般的なコマンドから、aptなどのパッケージマネージャーも動作させることができます。
+インストールできるパッケージが用意されていて、OSSでメンテされています。（メンテナーに感謝。スパチャはどこで投げられますか？[こちら](https://github.com/termux/termux-packages/tree/master/packages)のレポジトリの”Sponsor”ボタンから寄付ができます）
 また、`termux-setup-storage`を実行することで、AndroidのストレージにTermuxからアクセスできます。（普通に、cdで）
 ついでに言うとUbuntuのデスクトップ環境を作って、スマフォでLinuxのGUI環境も動かせます・・・！（UserLAnd使った方が手軽ですが。)
 
