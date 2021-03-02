@@ -7,10 +7,8 @@
 その頃は、通勤という人類には、早すぎる苦行が当たり前の様に行われている時期だったので、
 スマフォにLinux環境を入れて、電車の中で、個人でのアウトプットを増やし、自分の市場価値を高めよう！！
 そういう内容でしたが、この1年、在宅で仕事することが多くなり、完全にコンセプトが崩れてしまいました。
-目の前にちゃんとした開発環境（クアッドコアのCore i7のCPU・24GBのRAM・Geforce GTX 1070）があるから
-わざわざスマフォに入れなくていいよね？と。
-そう思ったのですが、とあるネタツイートが、1040いいね・184RTという個人的に大変おバズり申し上げたので、
-もしかして、今でも需要があるのかな？と思い、この記事を書きました。
+目の前にちゃんとした開発環境（クアッドコアのCore i7のCPU・24GBのRAM・Geforce GTX 1070）があるからわざわざスマフォに入れなくていいよね？と。
+そう思ったのですが、とあるネタツイートが、1040いいね・184RTという個人的に大変おバズり申し上げたので、もしかして、今でも需要があるのかな？と思い、この記事を書きました。
 
 ### ツイートについて
 
@@ -69,8 +67,7 @@ Play Storeから、Termuxと　Hacker's Keyboradをインストールします�
 Hacker's Keyboardは、PCと同じキーボード配列のソフトウェアキーボードです。
 日本語こそ入力できませんが、コマンドライン操作に必須な**ESC/Tab/Ctrl**のキーが用意されています。
 また、変換候補が表示されないので、スムーズなコマンド操作ができます。
-携帯できるBluetoothキーボードが一番ですが、必須となると、スマフォの携帯生が損なわれてしまいます。
-選択肢の一つとして、入れとくのをお勧めします。
+携帯できるBluetoothキーボードが一番ですが、キーボードがないときに積むので、入れとくのをお勧めします。
 
 ### code-serverのインストール
 
@@ -78,14 +75,14 @@ Termuxを起動して、以下のコマンドを実行します。
 
 ```bash
 apt update
-apt install nodejs yarn
+apt install -y nodejs yarn vim
 ```
 
 次に、`build-essential`と`Python`をインストールします。
 (ついでに使うので、gitも添えます。)
 
 ```bash
-apt install build-essential Python git
+apt install -y build-essential Python git
 ```
 
 全てのソフトウェアのインストールが終わったら、code-serverのインストールを行います。
@@ -102,6 +99,7 @@ yarn global add code-server
 ```bash
 vi ~/.config/code-server/config.yaml
 ```
+
 #### Vue.jsを動かしてみる
 
 #### flaskのチュートリアルをやってみる
@@ -114,7 +112,9 @@ vi ~/.config/code-server/config.yaml
 
 ## 参考
 
-[MacBook Air (M1, 2020) - 技術仕様](https://support.apple.com/kb/SP825?locale=ja_JP)
-[色々なスマートフォンのサイズと重さをまとめてみた | sakura86.com](https://sakura86.com/smartphone-size-summary/#toc_id_2)
-[TermuxとBluetoothキーボードでPC禁止を回避する - Qiita](https://qiita.com/bluepost59/items/657ef9c198bd43cf59dd)
-[Termux-setup-storage - Termux Wiki](https://wiki.termux.com/wiki/Termux-setup-storage)
+- [How to get Visual Studio Code to run on Android with Termux](https://dev.to/codeledger/how-to-get-visual-studio-code-to-run-in-termux-on-android-405j)
+- [MacBook Air (M1, 2020) - 技術仕様](https://support.apple.com/kb/SP825?locale=ja_JP)
+- [色々なスマートフォンのサイズと重さをまとめてみた | sakura86.com](https://sakura86.com/smartphone-size-summary/#toc_id_2)
+- [TermuxとBluetoothキーボードでPC禁止を回避する - Qiita](https://qiita.com/bluepost59/items/657ef9c198bd43cf59dd)
+- [Termux-setup-storage - Termux Wiki](https://wiki.termux.com/wiki/Termux-setup-storage)
+- [Node.js - Termux Wiki](https://wiki.termux.com/index.php?title=Node.js)
