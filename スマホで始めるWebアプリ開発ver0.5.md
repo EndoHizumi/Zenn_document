@@ -98,6 +98,10 @@ yarn global add code-server
 
 ### code-serverの設定
 
+インストールが終わったら、vimを開いて、以下のコンフィグファイルを開いて、編集します。
+```bash
+vi ~/.config/code-server/config.yaml
+```
 #### Vue.jsを動かしてみる
 
 #### flaskのチュートリアルをやってみる
