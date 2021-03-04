@@ -100,13 +100,34 @@ yarn global add code-server
 vi ~/.config/code-server/config.yaml
 ```
 
-#### Vue.jsを動かしてみる
+スマフォローカルでしか使わないので、認証をオフにします。
 
-#### flaskのチュートリアルをやってみる
+```yaml
+bind-addr: 127.0.0.1:8080
+auth: none # password を Noneに変更する
+# passwordを行ごと消す
+cert: false
+```
 
-## PCとのスペック比較
+### code-serverの起動
 
-#### AndroidでDockerが動く・・・？
+以下のコマンドで起動できます。
+
+```bash
+code-server 
+```
+
+アンパサンド（＆）をつけると、バックグラウンドで起動します。
+
+```bash
+
+code-server &
+
+```
+
+あとは、chromeかfirefoxで [http://localhost:8080](http://localhost:8080) に、アクセスして、見慣れた画面が出れば、完了です！！
+
+![code-severの画面](2021-03-04-22-46-32.png)
 
 ## 最後に
 
