@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/EndoHizumi/Zenn_document#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.75"
+    "zenn-cli": "^0.1.157"
   }
 }
